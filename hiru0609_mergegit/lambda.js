@@ -9,7 +9,7 @@ exports.handler = function (event, context, callback) {
     }).promise()
         .then(data => {
             console.log(data);
-            callback(null, { "message": "Successfully executed" });           // successful response
+            callback(null, { "message": "Successfully executed 123" });           // successful response
             /*
             data = {
                 Contents: [
@@ -34,5 +34,5 @@ exports.handler = function (event, context, callback) {
             callback(null, { "message": "an error occured" }); // an error occurred
         });
 
-    
+
 }

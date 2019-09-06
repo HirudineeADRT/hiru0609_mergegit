@@ -80,30 +80,8 @@
       "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
       "156547aa-cafc-4399-b5c0-324f62cdc971"
     ],
-    "currentFileId": "156547aa-cafc-4399-b5c0-324f62cdc971",
-    "resources": {
-      "sqsKTestSQS": {
-        "name": "sqsKTestSQS",
-        "type": "SQS",
-        "config": {
-          "mode": 1,
-          "existing": true,
-          "name": "KTestSQS",
-          "url": "https://sqs.us-east-1.amazonaws.com/318300609668/KTestSQS",
-          "selectedRegion": "us-east-1",
-          "deliveryDelay": "0",
-          "deliveryDelayUnit": "seconds",
-          "queueType": "standardQueue",
-          "defaultVisibilityTimeout": "30",
-          "defaultVisibilityTimeoutUnit": "seconds",
-          "messageRetentionPeriod": "345600",
-          "messageRetentionPeriodUnit": "seconds",
-          "maximumMessageSize": 256,
-          "receiveMessageWaitTime": "0",
-          "queueARN": "arn:aws:sqs:us-east-1:318300609668:KTestSQS"
-        }
-      }
-    },
+    "currentFileId": "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
+    "resources": {},
     "customTemplate": {
       "dialect": null,
       "definitions": null
@@ -144,7 +122,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567751097017
+    "lastSave": 1567751299211
   },
   "VCS_STATE": {
     "provider": "GitHub",

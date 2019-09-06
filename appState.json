@@ -9,8 +9,8 @@
         "isDirectory": true,
         "children": [
           "cd646f0e-0ffd-4566-93c1-39237b649235",
-          "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
-          "156547aa-cafc-4399-b5c0-324f62cdc971"
+          "156547aa-cafc-4399-b5c0-324f62cdc971",
+          "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b"
         ],
         "isRemovable": false,
         "filePath": "hiru0609_mergegit"
@@ -34,32 +34,6 @@
         },
         "triggers": []
       },
-      "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b": {
-        "id": "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
-        "parent": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
-        "name": "hirudinee.js",
-        "type": "JS_LAMBDA",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "hiru0609_mergegit/hirudinee.js",
-        "code": "exports.handler = function (event, context, callback) {\n    //hiruidnee\n    //hiru002\n}",
-        "config": {
-          "runtime": "nodejs8.10",
-          "handler": "handler",
-          "timeout": 60,
-          "memory": 128,
-          "layers": []
-        },
-        "triggers": [
-          {
-            "resourceName": "cognitotest",
-            "config": {
-              "triggerType": "CreateAuthChallenge"
-            }
-          }
-        ]
-      },
       "156547aa-cafc-4399-b5c0-324f62cdc971": {
         "id": "156547aa-cafc-4399-b5c0-324f62cdc971",
         "parent": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
@@ -77,6 +51,30 @@
           "memory": 128,
           "layers": []
         },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1London1indunilqaany",
+            "config": {}
+          }
+        ]
+      },
+      "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b": {
+        "id": "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
+        "parent": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
+        "name": "hirudinee.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru0609_mergegit/hirudinee.js",
+        "code": "exports.handler = function (event, context, callback) {\n    //hiruidnee\n    //hiru002\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
         "triggers": []
       }
     },
@@ -84,11 +82,62 @@
     "rootNode": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
     "openFiles": [
       "cd646f0e-0ffd-4566-93c1-39237b649235",
-      "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
-      "156547aa-cafc-4399-b5c0-324f62cdc971"
+      "156547aa-cafc-4399-b5c0-324f62cdc971",
+      "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b"
     ],
-    "currentFileId": "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
+    "currentFileId": "156547aa-cafc-4399-b5c0-324f62cdc971",
     "resources": {
+      "apigusEast1sachithraAPInameindunilqatstany": {
+        "name": "apigusEast1sachithraAPInameindunilqatstany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "sachithraAPIname",
+          "apiId": "052p9kjn18",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "zrjp6rdv3b",
+          "existingResources": {
+            "/": "zrjp6rdv3b"
+          },
+          "resourceMode": 0,
+          "resourceName": "indunil/qa/tst",
+          "resourcePath": "/indunil/qa/tst",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "8d2nx9",
+          "mode": 1
+        }
+      },
+      "apigusEast1London1indunilqaany": {
+        "name": "apigusEast1London1indunilqaany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "London1",
+          "apiId": "3lasc3k30a",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "hhvlfb3mgc",
+          "existingResources": {
+            "/qa": "06uojn",
+            "/qa/indu": "ads81q",
+            "/": "hhvlfb3mgc"
+          },
+          "resourceMode": 0,
+          "resourceName": "indunil/qa",
+          "resourcePath": "/indunil/qa",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Test1",
+          "mode": 1
+        }
+      },
       "cognitotest": {
         "name": "cognitotest",
         "type": "CognitoIdentityServiceProvider",
@@ -346,31 +395,6 @@
             ]
           }
         }
-      },
-      "apigusEast1sachithraAPInameindunilqatstany": {
-        "name": "apigusEast1sachithraAPInameindunilqatstany",
-        "type": "API_GATEWAY",
-        "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 1,
-          "apiName": "sachithraAPIname",
-          "apiId": "052p9kjn18",
-          "endpointType": "REGIONAL",
-          "rootResourceId": "zrjp6rdv3b",
-          "existingResources": {
-            "/": "zrjp6rdv3b"
-          },
-          "resourceMode": 0,
-          "resourceName": "indunil/qa/tst",
-          "resourcePath": "/indunil/qa/tst",
-          "restMethod": "ANY",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 1,
-          "stageName": "Test",
-          "stageDeploymentId": "8d2nx9",
-          "mode": 1
-        }
       }
     },
     "customTemplate": {
@@ -398,7 +422,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567748263229
+    "lastSave": 1567748475002
   },
   "VCS_STATE": {
     "provider": "GitHub",

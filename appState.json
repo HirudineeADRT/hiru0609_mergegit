@@ -45,7 +45,7 @@
         "filePath": "hiru0609_mergegit/hirudinee.js",
         "code": "exports.handler = function (event, context, callback) {\n\n\n}",
         "config": {
-          "runtime": "nodejs8.10",
+          "runtime": "nodejs10.x",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
@@ -61,7 +61,8 @@
               "Action": [
                 "s3:CreateBucket",
                 "s3:DeleteBucket",
-                "s3:UpdateBucket"
+                "s3:UpdateBucket",
+                "s3:test"
               ]
             }
           ]
@@ -148,7 +149,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567752158059
+    "lastSave": 1567752572037
   },
   "VCS_STATE": {
     "provider": "GitHub",

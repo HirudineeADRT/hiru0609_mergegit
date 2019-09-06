@@ -8,7 +8,8 @@ exports.handler = function (event, context, callback) {
         'Prefix': ''
     }).promise()
         .then(data => {
-            console.log(data);           // successful response
+            console.log(data);
+            callback(null, { "message": "Successfully executed" });           // successful response
             /*
             data = {
                 Contents: [
@@ -29,8 +30,9 @@ exports.handler = function (event, context, callback) {
             */
         })
         .catch(err => {
-            console.log(err, err.stack); // an error occurred
+            console.log(err, err.stack);
+            callback(null, { "message": "an error occured" }); // an error occurred
         });
 
-    callback(null, { "message": "Successfully executed" });
+    
 }

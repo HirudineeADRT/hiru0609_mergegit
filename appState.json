@@ -1,0 +1,77 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "20b0f360-4d49-42d9-97b8-d59c5f2b928a": {
+        "id": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
+        "parent": null,
+        "name": "hiru0609_mergegit",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "cd646f0e-0ffd-4566-93c1-39237b649235"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru0609_mergegit"
+      },
+      "cd646f0e-0ffd-4566-93c1-39237b649235": {
+        "id": "cd646f0e-0ffd-4566-93c1-39237b649235",
+        "parent": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru0609_mergegit/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
+    "openFiles": [
+      "cd646f0e-0ffd-4566-93c1-39237b649235"
+    ],
+    "currentFileId": "cd646f0e-0ffd-4566-93c1-39237b649235",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru0609_mergegit",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1567746233265
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru0609_mergegit",
+      "url": "https://github.com/HirudineeADRT/hiru0609_mergegit"
+    }
+  }
+}

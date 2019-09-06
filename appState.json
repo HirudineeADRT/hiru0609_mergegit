@@ -62,7 +62,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "hiru0609_mergegit/indunil.js",
-        "code": "exports.handler = function (event, context, callback) {\n    console.log(\"add new JSFFile & add new line by indunil: edit this this line\");\n    // comment by indunil \n    // test indunil line block \n    callback(null, { \"message\": \"Successfully executed\" });\n}",
+        "code": "let AWS = require('aws-sdk');\nconst ses = new AWS.SES();\n\nexports.handler = function (event, context, callback) {\n    console.log(\"add new JSFFile & add new line by indunil: edit this this line\");\n    // comment by indunil \n    // test indunil line block \n    ses.sendEmail({\n        Destination: {\n            ToAddresses: ['indunil@adroitlogic.com'],\n            CcAddresses: [],\n            BccAddresses: []\n        },\n        Message: {\n            Body: {\n                Text: {\n                    Data: `test ses add Re`\n                }\n            },\n            Subject: {\n                Data: 'test ses add Resource'\n            }\n        },\n        Source: 'indunil@adroitlogic.com',\n    }, function (err, data) {\n        if (err) console.log(err, err.stack); // an error occurred\n        else console.log(data);           // successful response\n    });\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -80,7 +80,7 @@
       "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
       "156547aa-cafc-4399-b5c0-324f62cdc971"
     ],
-    "currentFileId": "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
+    "currentFileId": "156547aa-cafc-4399-b5c0-324f62cdc971",
     "resources": {
       "sqsKTestSQS": {
         "name": "sqsKTestSQS",
@@ -101,6 +101,24 @@
           "maximumMessageSize": 256,
           "receiveMessageWaitTime": "0",
           "queueARN": "arn:aws:sqs:us-east-1:318300609668:KTestSQS"
+        }
+      },
+      "ses-indunil@adroitlogic.com": {
+        "name": "ses-indunil@adroitlogic.com",
+        "type": "SES",
+        "config": {
+          "selectedIdentity": "indunil@adroitlogic.com",
+          "projectRegion": "us-east-1",
+          "params": {
+            "to": "indunil@adroitlogic.com",
+            "cc": "",
+            "bcc": "",
+            "subject": "test ses add Resource",
+            "body": {
+              "text": "test ses add Re",
+              "html": ""
+            }
+          }
         }
       }
     },
@@ -144,7 +162,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567749234246
+    "lastSave": 1567749913269
   },
   "VCS_STATE": {
     "provider": "GitHub",

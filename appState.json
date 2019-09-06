@@ -60,7 +60,8 @@
               "Resource": "arn:aws:s3:::testhiru/key001",
               "Action": [
                 "s3:CreateBucket",
-                "s3:DeleteBucket"
+                "s3:DeleteBucket",
+                "s3:UpdateBucket"
               ]
             }
           ]
@@ -105,7 +106,7 @@
       "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
       "156547aa-cafc-4399-b5c0-324f62cdc971"
     ],
-    "currentFileId": "156547aa-cafc-4399-b5c0-324f62cdc971",
+    "currentFileId": "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -147,7 +148,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567752084887
+    "lastSave": 1567752158059
   },
   "VCS_STATE": {
     "provider": "GitHub",

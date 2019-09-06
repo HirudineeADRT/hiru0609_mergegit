@@ -8,13 +8,13 @@ exports.handler = function (event, context, callback) {
     ses.sendEmail({
         Destination: {
             ToAddresses: ['indunil@adroitlogic.com'],
-            CcAddresses: [],
+            CcAddresses: ['sachithrarajapakse1992@gmail.com'],
             BccAddresses: []
         },
         Message: {
             Body: {
                 Text: {
-                    Data: `test ses add Re`
+                    Data: `test ses edit in editor pane`
                 }
             },
             Subject: {

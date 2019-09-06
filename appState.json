@@ -80,7 +80,7 @@
       "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
       "156547aa-cafc-4399-b5c0-324f62cdc971"
     ],
-    "currentFileId": "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
+    "currentFileId": "156547aa-cafc-4399-b5c0-324f62cdc971",
     "resources": {
       "sqsKTestSQS": {
         "name": "sqsKTestSQS",
@@ -101,24 +101,6 @@
           "maximumMessageSize": 256,
           "receiveMessageWaitTime": "0",
           "queueARN": "arn:aws:sqs:us-east-1:318300609668:KTestSQS"
-        }
-      },
-      "ses-indunil@adroitlogic.com": {
-        "name": "ses-indunil@adroitlogic.com",
-        "type": "SES",
-        "config": {
-          "selectedIdentity": "indunil@adroitlogic.com",
-          "projectRegion": "us-east-1",
-          "params": {
-            "to": "indunil@adroitlogic.com",
-            "cc": "",
-            "bcc": "",
-            "subject": "test ses add Resource",
-            "body": {
-              "text": "test ses add Re",
-              "html": ""
-            }
-          }
         }
       }
     },
@@ -162,7 +144,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567751025647
+    "lastSave": 1567751097017
   },
   "VCS_STATE": {
     "provider": "GitHub",

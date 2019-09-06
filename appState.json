@@ -9,8 +9,8 @@
         "isDirectory": true,
         "children": [
           "cd646f0e-0ffd-4566-93c1-39237b649235",
-          "156547aa-cafc-4399-b5c0-324f62cdc971",
-          "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b"
+          "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
+          "156547aa-cafc-4399-b5c0-324f62cdc971"
         ],
         "isRemovable": false,
         "filePath": "hiru0609_mergegit"
@@ -25,25 +25,6 @@
         "isRemovable": true,
         "filePath": "hiru0609_mergegit/lambda.js",
         "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
-        "config": {
-          "runtime": "nodejs8.10",
-          "handler": "handler",
-          "timeout": 60,
-          "memory": 128,
-          "layers": []
-        },
-        "triggers": []
-      },
-      "156547aa-cafc-4399-b5c0-324f62cdc971": {
-        "id": "156547aa-cafc-4399-b5c0-324f62cdc971",
-        "parent": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
-        "name": "indunil.js",
-        "type": "JS_LAMBDA",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "hiru0609_mergegit/indunil.js",
-        "code": "exports.handler = function (event, context, callback) {\n    console.log(\"add new JSFFile & add new line by indunil: edit this this line\");\n    // comment by indunil \n    // test indunil line block \n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -71,16 +52,35 @@
           "layers": []
         },
         "triggers": []
+      },
+      "156547aa-cafc-4399-b5c0-324f62cdc971": {
+        "id": "156547aa-cafc-4399-b5c0-324f62cdc971",
+        "parent": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
+        "name": "indunil.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru0609_mergegit/indunil.js",
+        "code": "exports.handler = function (event, context, callback) {\n    console.log(\"add new JSFFile & add new line by indunil: edit this this line\");\n    // comment by indunil \n    // test indunil line block \n    callback(null, { \"message\": \"Successfully executed\" });\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
       }
     },
     "deletedFiles": [],
     "rootNode": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
     "openFiles": [
       "cd646f0e-0ffd-4566-93c1-39237b649235",
-      "156547aa-cafc-4399-b5c0-324f62cdc971",
-      "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b"
+      "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
+      "156547aa-cafc-4399-b5c0-324f62cdc971"
     ],
-    "currentFileId": "156547aa-cafc-4399-b5c0-324f62cdc971",
+    "currentFileId": "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -107,7 +107,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567749024862
+    "lastSave": 1567749157194
   },
   "VCS_STATE": {
     "provider": "GitHub",

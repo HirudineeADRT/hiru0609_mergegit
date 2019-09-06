@@ -34,7 +34,7 @@
         },
         "triggers": [
           {
-            "resourceName": "apigusEast1London1editTtestany",
+            "resourceName": "apigusEast1sachithraAPInameindunilqatstany",
             "config": {}
           }
         ]
@@ -84,16 +84,24 @@
         "filePath": "hiru0609_mergegit/indunil.js",
         "code": "exports.handler = function (event, context, callback) {\n    console.log(\"add new JSFFile & add new line by indunil: edit this this line\");\n    // comment by indunil \n    // test indunil line block \n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "config": {
-          "runtime": "nodejs10.x",
+          "runtime": "nodejs8.10",
           "handler": "handler",
-          "timeout": 312,
+          "timeout": 60,
           "memory": 1024,
           "layers": []
         },
         "triggers": [],
         "customSecurityPolicy": {
           "Version": "2012-10-17",
-          "Statement": []
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Resource": "arn:aws:codestar:us-east-1::/",
+              "Action": [
+                "*"
+              ]
+            }
+          ]
         }
       }
     },
@@ -106,6 +114,17 @@
     ],
     "currentFileId": "cd646f0e-0ffd-4566-93c1-39237b649235",
     "resources": {
+      "s3as2TestLahiru": {
+        "name": "s3as2TestLahiru",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "as2-test-lahiru"
+          }
+        }
+      },
       "apigusEast1sachithraAPInameindunilqatstany": {
         "name": "apigusEast1sachithraAPInameindunilqatstany",
         "type": "API_GATEWAY",
@@ -128,17 +147,6 @@
           "stageMode": 0,
           "stageName": "test1",
           "mode": 1
-        }
-      },
-      "s3as2TestLahiru": {
-        "name": "s3as2TestLahiru",
-        "type": "S3",
-        "config": {
-          "mode": 1,
-          "bucket": {
-            "region": "us-east-1",
-            "name": "as2-test-lahiru"
-          }
         }
       },
       "apigusEast1London1editTtestany": {
@@ -208,7 +216,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567757050094
+    "lastSave": 1567757286605
   },
   "VCS_STATE": {
     "provider": "GitHub",

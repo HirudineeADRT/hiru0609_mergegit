@@ -51,7 +51,20 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": []
+        "triggers": [],
+        "customSecurityPolicy": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Resource": "arn:aws:s3:::testhiru/key001",
+              "Action": [
+                "s3:CreateBucket",
+                "s3:DeleteBucket"
+              ]
+            }
+          ]
+        }
       },
       "156547aa-cafc-4399-b5c0-324f62cdc971": {
         "id": "156547aa-cafc-4399-b5c0-324f62cdc971",
@@ -122,7 +135,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567751299211
+    "lastSave": 1567751540213
   },
   "VCS_STATE": {
     "provider": "GitHub",

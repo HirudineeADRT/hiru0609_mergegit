@@ -34,7 +34,7 @@
         },
         "triggers": [
           {
-            "resourceName": "apigusEast1sachithraAPInameindunilqatstany",
+            "resourceName": "apigusEast1London1editTtestany",
             "config": {}
           }
         ]
@@ -84,24 +84,16 @@
         "filePath": "hiru0609_mergegit/indunil.js",
         "code": "exports.handler = function (event, context, callback) {\n    console.log(\"add new JSFFile & add new line by indunil: edit this this line\");\n    // comment by indunil \n    // test indunil line block \n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "config": {
-          "runtime": "nodejs8.10",
+          "runtime": "nodejs10.x",
           "handler": "handler",
-          "timeout": 60,
+          "timeout": 312,
           "memory": 1024,
           "layers": []
         },
         "triggers": [],
         "customSecurityPolicy": {
           "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Effect": "Allow",
-              "Resource": "arn:aws:codestar:us-east-1::/",
-              "Action": [
-                "*"
-              ]
-            }
-          ]
+          "Statement": []
         }
       }
     },
@@ -114,17 +106,6 @@
     ],
     "currentFileId": "cd646f0e-0ffd-4566-93c1-39237b649235",
     "resources": {
-      "s3as2TestLahiru": {
-        "name": "s3as2TestLahiru",
-        "type": "S3",
-        "config": {
-          "mode": 1,
-          "bucket": {
-            "region": "us-east-1",
-            "name": "as2-test-lahiru"
-          }
-        }
-      },
       "apigusEast1sachithraAPInameindunilqatstany": {
         "name": "apigusEast1sachithraAPInameindunilqatstany",
         "type": "API_GATEWAY",
@@ -146,6 +127,43 @@
           "enableCORS": false,
           "stageMode": 0,
           "stageName": "test1",
+          "mode": 1
+        }
+      },
+      "s3as2TestLahiru": {
+        "name": "s3as2TestLahiru",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "as2-test-lahiru"
+          }
+        }
+      },
+      "apigusEast1London1editTtestany": {
+        "name": "apigusEast1London1editTtestany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "London1",
+          "apiId": "3lasc3k30a",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "hhvlfb3mgc",
+          "existingResources": {
+            "/qa": "06uojn",
+            "/qa/indu": "ads81q",
+            "/": "hhvlfb3mgc"
+          },
+          "resourceMode": 0,
+          "resourceName": "editT/test",
+          "resourcePath": "/editT/test",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test11",
           "mode": 1
         }
       }
@@ -190,7 +208,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567757042872
+    "lastSave": 1567757050094
   },
   "VCS_STATE": {
     "provider": "GitHub",

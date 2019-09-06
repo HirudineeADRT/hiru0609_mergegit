@@ -43,7 +43,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "hiru0609_mergegit/hirudinee.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    //this is a test\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -77,7 +77,8 @@
     "rootNode": "20b0f360-4d49-42d9-97b8-d59c5f2b928a",
     "openFiles": [
       "cd646f0e-0ffd-4566-93c1-39237b649235",
-      "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b"
+      "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
+      "156547aa-cafc-4399-b5c0-324f62cdc971"
     ],
     "currentFileId": "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
     "resources": {},
@@ -106,7 +107,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567746912421
+    "lastSave": 1567746997308
   },
   "VCS_STATE": {
     "provider": "GitHub",

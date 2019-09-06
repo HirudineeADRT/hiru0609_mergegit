@@ -79,24 +79,16 @@
         "filePath": "hiru0609_mergegit/indunil.js",
         "code": "exports.handler = function (event, context, callback) {\n    console.log(\"add new JSFFile & add new line by indunil: edit this this line\");\n    // comment by indunil \n    // test indunil line block \n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "config": {
-          "runtime": "nodejs8.10",
+          "runtime": "nodejs10.x",
           "handler": "handler",
-          "timeout": 60,
-          "memory": 128,
+          "timeout": 312,
+          "memory": 1024,
           "layers": []
         },
         "triggers": [],
         "customSecurityPolicy": {
           "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Effect": "Allow",
-              "Resource": "arn:aws:codestar:us-east-1::/",
-              "Action": [
-                "*"
-              ]
-            }
-          ]
+          "Statement": []
         }
       }
     },
@@ -107,7 +99,7 @@
       "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
       "156547aa-cafc-4399-b5c0-324f62cdc971"
     ],
-    "currentFileId": "0c8b3b2f-94e2-4045-aafa-52f9bab73e1b",
+    "currentFileId": "156547aa-cafc-4399-b5c0-324f62cdc971",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -149,7 +141,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567755251079
+    "lastSave": 1567755353683
   },
   "VCS_STATE": {
     "provider": "GitHub",
